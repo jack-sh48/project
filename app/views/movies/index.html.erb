@@ -2,8 +2,13 @@
 <div style="background: #CACFD2">
   <% a = @movies.length %>
   <i><center style="background: #ABB2B9">
+<<<<<<< Updated upstream
     <h1><strong> Total Movies This Page : <%= a %></strong></h1></center>
     <% @movies.each do |movie| %>
+=======
+  <h1><strong> Total Movies This Page : <%= a %></strong></h1></center>
+  <% @movies.each do |movie| %>
+>>>>>>> Stashed changes
     <div class="well">
       <div class="movie_image">
         <% if movie.movie_image.present? %>
@@ -16,8 +21,13 @@
          <% end %>
        </div>
 
+<<<<<<< Updated upstream
        <h2 style="background: white">
         <strong>Title :<%= link_to movie.title, movie_path(movie) %></strong>
+=======
+      <h2 style="background: white">
+        <strong>Title :<%= link_to movie.title, movie_path(movie.id) %></strong>
+>>>>>>> Stashed changes
       </h2>
 
       <h3>Rating :<%=movie.rating%></h3>
